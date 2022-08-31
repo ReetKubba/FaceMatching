@@ -1,0 +1,14 @@
+mtcnn==0.1.1
+tensorflow==2.9.1
+keras==2.9.0
+keras-vggface==0.6
+keras_applications==1.0.8
+PyYAML
+tqdm
+scikit-learn
+streamlit
+bing-image-downloader
+
+
+#local pacages-
+-e .

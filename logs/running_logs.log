@@ -1,0 +1,248 @@
+[2022-08-26 20:37:28,567: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2022-08-26 20:37:28,567: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2022-08-26 20:37:28,713: INFO: 01_generate_img_pkl]: Total actress are: 100
+[2022-08-26 20:37:28,713: INFO: 01_generate_img_pkl]: Total actress images: 8664
+[2022-08-26 20:37:28,713: INFO: 01_generate_img_pkl]: stage_01 completed!>>>>>
+[2022-08-26 21:38:38,693: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-26 21:38:38,693: INFO: 02_feature_extractor]: stage_02 completed!>>>>>
+[2022-08-27 19:02:12,177: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 19:02:48,470: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 19:02:48,471: INFO: 02_feature_extractor]: stage_02 completed!>>>>>
+[2022-08-27 19:19:45,631: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 19:19:47,325: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 19:19:47,325: ERROR: 02_feature_extractor]: 'module' object is not callable
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 64, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 53, in feature_extractor
+    for file in tqdm(filenames):
+TypeError: 'module' object is not callable
+[2022-08-27 19:20:59,634: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 19:21:01,250: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 19:21:01,250: ERROR: 02_feature_extractor]: 'module' object is not callable
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 67, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 56, in feature_extractor
+    for file in tqdm(filenames):
+TypeError: 'module' object is not callable
+[2022-08-27 20:48:46,411: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 20:48:47,857: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 20:48:47,873: ERROR: 02_feature_extractor]: module 'keras.preprocessing.image' has no attribute 'load_img'
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 67, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 57, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 21, in extractor
+    img=image.load_img(img_path,target_size=(224*224))
+AttributeError: module 'keras.preprocessing.image' has no attribute 'load_img'
+[2022-08-27 20:57:53,726: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 20:57:55,411: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 20:57:56,018: ERROR: 02_feature_extractor]: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 68, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 58, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 22, in extractor
+    img=load_img (img_path,target_size=(224*224))
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras\utils\image_utils.py", line 413, in load_img
+    width_height_tuple = (target_size[1], target_size[0])
+TypeError: 'int' object is not subscriptable
+[2022-08-27 20:59:40,732: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 20:59:43,023: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 20:59:43,030: ERROR: 02_feature_extractor]: module 'keras.preprocessing.image' has no attribute 'load_img'
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 68, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 58, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 22, in extractor
+    img=image.load_img(img_path,target_size=(224*224))
+AttributeError: module 'keras.preprocessing.image' has no attribute 'load_img'
+[2022-08-27 21:02:58,811: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:03:00,638: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:03:02,805: ERROR: 02_feature_extractor]: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 68, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 58, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 22, in extractor
+    img=tf.keras.utils.load_img(img_path,target_size=(224*224))
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras\utils\image_utils.py", line 413, in load_img
+    width_height_tuple = (target_size[1], target_size[0])
+TypeError: 'int' object is not subscriptable
+[2022-08-27 21:11:48,747: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:11:50,873: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:11:50,904: ERROR: 02_feature_extractor]: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 70, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 60, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 24, in extractor
+    img=load_img(img_path,target_size=(224*224))
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras\utils\image_utils.py", line 413, in load_img
+    width_height_tuple = (target_size[1], target_size[0])
+TypeError: 'int' object is not subscriptable
+[2022-08-27 21:15:59,188: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:16:01,370: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:16:01,427: ERROR: 02_feature_extractor]: list index out of range
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 70, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 60, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 24, in extractor
+    img=load_img(img_path,target_size=[224*224])
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras\utils\image_utils.py", line 413, in load_img
+    width_height_tuple = (target_size[1], target_size[0])
+IndexError: list index out of range
+[2022-08-27 21:17:49,338: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:17:51,381: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:17:51,421: ERROR: 02_feature_extractor]: index 1 is out of bounds for axis 3 with size 1
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 71, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 61, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 28, in extractor
+    preprocess_img=preprocess_input(expanded_img)
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras_vggface\utils.py", line 46, in preprocess_input
+    x_temp[..., 1] -= 104.7624
+IndexError: index 1 is out of bounds for axis 3 with size 1
+[2022-08-27 21:18:48,122: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:18:49,784: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:18:49,801: ERROR: 02_feature_extractor]: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 71, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 61, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 25, in extractor
+    img=load_img(img_path,target_size=target_size)
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras\utils\image_utils.py", line 413, in load_img
+    width_height_tuple = (target_size[1], target_size[0])
+TypeError: 'int' object is not subscriptable
+[2022-08-27 21:19:15,873: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:19:17,549: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:19:17,566: ERROR: 02_feature_extractor]: index 1 is out of bounds for axis 3 with size 1
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 71, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 61, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 28, in extractor
+    preprocess_img=preprocess_input(expanded_img)
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras_vggface\utils.py", line 46, in preprocess_input
+    x_temp[..., 1] -= 104.7624
+IndexError: index 1 is out of bounds for axis 3 with size 1
+[2022-08-27 21:20:54,426: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:20:56,144: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:20:56,158: ERROR: 02_feature_extractor]: index 1 is out of bounds for axis 3 with size 1
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 71, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 61, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 28, in extractor
+    preprocess_img=preprocess_input(expanded_img)
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras_vggface\utils.py", line 46, in preprocess_input
+    x_temp[..., 1] -= 104.7624
+IndexError: index 1 is out of bounds for axis 3 with size 1
+[2022-08-27 21:21:17,799: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:21:19,313: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:21:19,329: ERROR: 02_feature_extractor]: index 1 is out of bounds for axis 3 with size 1
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 71, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 61, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 28, in extractor
+    preprocess_img=preprocess_input(expanded_img)
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras_vggface\utils.py", line 46, in preprocess_input
+    x_temp[..., 1] -= 104.7624
+IndexError: index 1 is out of bounds for axis 3 with size 1
+[2022-08-27 21:22:11,907: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:22:13,506: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:22:13,532: ERROR: 02_feature_extractor]: index 1 is out of bounds for axis 3 with size 1
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 71, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 61, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 28, in extractor
+    preprocess_img=preprocess_input(expanded_img)
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras_vggface\utils.py", line 46, in preprocess_input
+    x_temp[..., 1] -= 104.7624
+IndexError: index 1 is out of bounds for axis 3 with size 1
+[2022-08-27 21:25:39,699: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:25:41,239: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 21:56:12,651: INFO: 02_feature_extractor]: stage_02 completed!>>>>>
+[2022-08-27 21:59:55,575: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 21:59:57,365: ERROR: 02_feature_extractor]: name 'create_directory' is not defined
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 75, in <module>
+    feature_extractor(config_path = parsed_args.config,params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 57, in feature_extractor
+    create_directory(dirs=[feature_extraction_path])
+NameError: name 'create_directory' is not defined
+[2022-08-27 22:05:20,583: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 22:05:22,139: ERROR: 02_feature_extractor]: mkdir: path should be string, bytes or os.PathLike, not list
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 75, in <module>
+    feature_extractor(config_path = parsed_args.config,params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 58, in feature_extractor
+    os.mkdir(dirs)
+TypeError: mkdir: path should be string, bytes or os.PathLike, not list
+[2022-08-27 22:05:42,497: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 22:05:44,017: ERROR: 02_feature_extractor]: mkdir: path should be string, bytes or os.PathLike, not list
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 75, in <module>
+    feature_extractor(config_path = parsed_args.config,params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 58, in feature_extractor
+    os.mkdir(dirs)
+TypeError: mkdir: path should be string, bytes or os.PathLike, not list
+[2022-08-27 22:11:21,930: INFO: tocheck]: >>>>> stage_02 started
+[2022-08-27 22:11:23,584: ERROR: tocheck]: name 'create_directory' is not defined
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\tocheck.py", line 86, in <module>
+    feature_extractor(config_path = parsed_args.config, params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\tocheck.py", line 64, in feature_extractor
+    create_directory(dirs=[feature_extraction_path])
+NameError: name 'create_directory' is not defined
+[2022-08-27 22:11:55,396: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 22:11:56,831: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 22:11:56,831: ERROR: 02_feature_extractor]: 'module' object is not callable
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 76, in <module>
+    feature_extractor(config_path = parsed_args.config,params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 64, in feature_extractor
+    for file in tqdm(filenames):
+TypeError: 'module' object is not callable
+[2022-08-27 22:12:20,266: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 22:12:21,476: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 22:12:21,554: ERROR: 02_feature_extractor]: index 1 is out of bounds for axis 3 with size 1
+Traceback (most recent call last):
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 76, in <module>
+    feature_extractor(config_path = parsed_args.config,params_path= parsed_args.params)
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 65, in feature_extractor
+    features.append(extractor(file,model))
+  File "c:\Users\dell\Downloads\FaceMatching\src\02_feature_extractor.py", line 28, in extractor
+    preprocess_img=preprocess_input(expanded_img)
+  File "c:\Users\dell\Downloads\FaceMatching\env\lib\site-packages\keras_vggface\utils.py", line 46, in preprocess_input
+    x_temp[..., 1] -= 104.7624
+IndexError: index 1 is out of bounds for axis 3 with size 1
+[2022-08-27 22:13:08,649: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-27 22:13:10,226: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-27 22:32:02,689: INFO: 02_feature_extractor]: stage_02 completed!>>>>>
+[2022-08-28 09:25:36,715: INFO: 02_feature_extractor]: >>>>> stage_02 started
+[2022-08-28 09:25:38,679: INFO: all_utils]: Directory is created at artifacts\extracted_features
+[2022-08-28 09:53:14,446: INFO: 02_feature_extractor]: stage_02 completed!>>>>>
+[2022-08-28 12:14:12,102: INFO: 01_generate_img_pkl]: >>>>> stage_01 started
+[2022-08-28 12:14:12,110: INFO: all_utils]: Directory is created at artifacts\pickle_format_data
+[2022-08-28 12:14:12,340: INFO: 01_generate_img_pkl]: Total actress are: 100
+[2022-08-28 12:14:12,340: INFO: 01_generate_img_pkl]: Total actress images: 8664
+[2022-08-28 12:14:12,346: INFO: 01_generate_img_pkl]: stage_01 completed!>>>>>
